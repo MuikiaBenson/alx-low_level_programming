@@ -1,4 +1,4 @@
-#include "/home/benny/0x02-functions_nested_loops/main.h"
+#include "main.h"
 
 /**
  * main- this is the main funcion
