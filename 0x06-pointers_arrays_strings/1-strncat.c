@@ -3,7 +3,8 @@
 /**
  * _strncat- concatenates two strings
  * @dest: string
- * @src: sring
+ * @src: string
+ * @n: number of bytes to append to dest(from src)
  * Return: dest
  */
 
