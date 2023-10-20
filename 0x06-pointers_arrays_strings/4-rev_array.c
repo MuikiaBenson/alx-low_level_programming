@@ -4,16 +4,18 @@
  * reserve_array- Reserves the content of an array of integers
  * @a: integer to be reserved
  * @n: number of elements in the array
+ * Return: void
  */
 
 void reserve_array(int *a, int n)
 {
-	int i, j;
+	int i;
+	int j;
 
-	for (j = n - 1; j >= n / 2; j--)
+	for (i = 0; i < n--; i--)
 	{
-		i = a[n - 1 - j];
-		a[n - 1 - j] = a[j];
-		a[j] = i
+		i = a[i];
+		a[i] = a[n];
+		a[n] = j;
 	}
 }
