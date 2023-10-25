@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - prints a string in revers
- * @s: String
+ * _print_rev_recursion - Prints string in reverse
+ * @s: string
  *
  * Return: Void
  */
@@ -13,7 +13,8 @@ void _print_rev_recursion(char *s)
 	{
 		return;
 	}
-	s++
+	s++;
 	_print_rev_recursion(s);
+	s--;
 	_putchar(*s);
 }
