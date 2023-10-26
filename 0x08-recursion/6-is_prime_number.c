@@ -2,10 +2,23 @@
 #include <stdio.h>
 
 /**
- * check_prime - checks if number is prime
+ * is_prime_number - returns if a number is prime
+ * @n: number to be checked
+ *
+ * Return: int value
+ */
+
+int is_prime_number(int n)
+{
+	return (check_prime(n, 1));
+}
+
+/**
+ * check_prime - check if number is prime
  * @n: number to be checked
  * @i: number of iterations
- * Return: 1 for prime or 0 composite
+ *
+ * Return: 1 prime numbers or 0 composite
  */
 
 int check_prime(int n, int i)
