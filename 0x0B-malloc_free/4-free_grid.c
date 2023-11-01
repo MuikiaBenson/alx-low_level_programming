@@ -3,20 +3,20 @@
 #include <stdio.h>
 
 /**
- * print_grid - prints a gri of integers
+ * free_grid - prints a gri of integers
  * @grid: address of the 2d grid
  * @height: height of the grid
  *
- * Retur: NULL
+ * Return: NULL
  */
 
-void print_grid(int **grid, int height)
+void free_grid(int **grid, int height)
 {
 	int a;
 
 	for (a = 0; a < height; a++)
 	{
-		free(grid[a])
+		free(grid[a]);
 	}
 
 	free(grid);

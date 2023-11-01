@@ -26,7 +26,7 @@ void print_grid(int **grid, int width, int height)
 	}
 	printf("\n");
 	h++;
-	}
+	} 
 }
 
 /**
@@ -40,7 +40,7 @@ int main(void)
 
 	grid = alloc_grid(6, 4);
 	if (grid == NULL)
-    	{
+	{
 	return (1);
 	}
 	print_grid(grid, 6, 4);
