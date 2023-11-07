@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main- entry point(prints main function)
+ * main- entry point(prints name of the file)
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	printf("%\n", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
