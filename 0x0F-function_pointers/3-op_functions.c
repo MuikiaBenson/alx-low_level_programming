@@ -29,7 +29,7 @@ int op_sub(int a, int b)
 
 /**
  * op_div - division function
- * * @a: first argument
+ * @a: first argument
  * @b: second argument
  *
  * Return: void
