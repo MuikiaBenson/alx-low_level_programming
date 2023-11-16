@@ -1,10 +1,13 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
  * struct list_s - singly linked list
  * @str: string
  * @len: lenght of the string
+ *
+ * Description: singly linked list node
+ * structure
  * @next: points to the next node
  */
 
