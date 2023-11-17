@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdddef.h>
 
 /**
  * print_list - print all elements of `list_t` list
@@ -11,17 +10,19 @@
  */
 size_t print_list(const list_t *h)
 {
-	const list_t *a;
-	size_t c;
+	size_t nodes = 0;
 
-	c = 0;
-	a = h;
-	while (a != NULL)
+	while (h)
 	{
-		printf("[%d] %s\n", a->len, a->str);
-		a = a->next;
-		c++;
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		nodes++;
+		h = h->next;
 	}
 
-	return (c);
+	return (nodes);
 }
