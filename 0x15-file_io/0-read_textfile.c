@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/types.h>
 
 /**
  * read_textfile- Reads the txt file print to stdout
@@ -22,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
 	r = read(fd, buf, letters);
-	w = write(STDOUT_FILENO, buf, t);
+	w = write(STDOUT_FILENO, buf, r);
 
 	free(buf);
 	close(fd);
